@@ -1,0 +1,50 @@
+<main>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+
+    <!-- Add this container div -->
+    <div class="about-socials">
+      <a href="https://github.com/mikailakar" target="_blank" class="social-link">
+        <img src="assets/images/socials/github.svg" alt="GitHub Logo">
+      </a>
+      <a href="https://www.linkedin.com/in/mikailakar/" target="_blank" class="social-link">
+        <img src="assets/images/socials/linkedin.svg" alt="LinkedIn Logo">
+      </a>
+    </div>
+
+    <p>
+      A passionate Full-Stack Developer. I have experience developing projects with .NET, Entity Framework, Angular,
+      and Unity. I am currently working on enhancing my skills in .NET 8, Angular, and Unity.
+    </p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div *ngFor="let skill of skills" class="skill-item">
+        <img [src]="skill.imageUrl" [alt]="skill.name" class="skill-logo">
+        <span class="skill-name">{{ skill.name }}</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <a *ngFor="let project of projects" [href]="project.url" target="_blank" class="project-card-link">
+        <div class="project-card">
+          <h3>
+            <img *ngIf="project.url.includes('github.com')" src="assets/images/publish/github.svg" alt="GitHub Icon"
+              class="project-title-icon">
+            <img *ngIf="project.url.includes('play.google.com')" src="assets/images/publish/googleplay.svg"
+              alt="Google Play Icon" class="project-title-icon">
+            <img *ngIf="project.url.includes('itch.io')" src="assets/images/publish/itchdotio.svg" alt="itch.io Icon"
+              class="project-title-icon">
+            {{ project.title }}
+          </h3>
+          <p>{{ project.description }}</p>
+        </div>
+      </a>
+    </div>
+  </section>
+</main>

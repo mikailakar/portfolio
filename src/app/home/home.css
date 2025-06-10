@@ -1,0 +1,150 @@
+.section {
+  padding: 4rem;
+  border-bottom: 1px solid #333;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* --- About Me Section Styles --- */
+
+/* Make the whole section a flex container to center everything */
+#about.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center-align the text */
+}
+
+/* Container for the social icons */
+.about-socials {
+  display: flex;
+  gap: 1.5rem; /* Space between the icons */
+  margin-top: 1rem; /* Space below the "About Me" title */
+  margin-bottom: 1.5rem; /* Space above the paragraph */
+}
+
+/* The icon images within the links */
+.about-socials .social-link img {
+  height: 32px; /* A good size for this context */
+  width: auto;
+  filter: invert(0.8); /* Light grey to match the theme */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for the icons */
+.about-socials .social-link:hover img {
+  filter: invert(1); /* Make it pure white on hover */
+  transform: scale(1.15); /* Make it pop */
+}
+
+/* Style the paragraph for better readability */
+#about p {
+  max-width: 600px; /* Constrain the width of the text */
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* --- Skills Section Styles --- */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 2.5rem;
+}
+.skill-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-logo {
+  height: 60px;
+  transition: transform 0.3s ease;
+  filter: invert(0.9);
+}
+.skill-name {
+  position: absolute;
+  bottom: -30px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+.skill-item:hover .skill-name {
+  opacity: 1;
+  visibility: visible;
+}
+.skill-item:hover .skill-logo {
+  transform: scale(1.15);
+}
+
+
+/* --- Project Styles --- */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem 1.5rem;
+}
+
+/* This targets the <a> tag wrapping the card */
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex; 
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added 'ease' for smoothness */
+  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-card-link:hover .project-card { /* Use the link's hover state */
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #4dabf7;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.project-title-icon {
+  height: 20px;
+  width: 20px;
+  filter: invert(0.6); /* This is the initial, dimmer state */
+  transition: filter 0.3s ease; /* STEP 1: Add the smooth transition */
+}
+
+/* STEP 2: The new hover rule */
+.project-card-link:hover .project-title-icon {
+  filter: invert(0.9); /* This is the bright state on hover */
+}
+
+.project-card p {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}

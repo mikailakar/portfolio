@@ -1,0 +1,56 @@
+.footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-top: 1px solid #333;
+  }
+  
+  .contact-info h3 {
+    margin-top: 0;
+    margin-bottom: 2rem; /* More space below the "Contact" title */
+  }
+  
+  /* Flex container for all the links */
+  .social-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center;
+    gap: 1.5rem; /* Space between each link */
+    max-width: min-content; /* Constrain width for a cleaner look */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Style for each individual link (the <a> tag) */
+  .social-link {
+    color: #e0e0e0; /* Default text color */
+    text-decoration: none; /* Remove underline by default */
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between the icon and the text */
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* The icon image inside the link */
+  .social-link img {
+    height: 28px;
+    width: auto;
+    filter: invert(0.8); /* Make icons a light grey */
+    transition: transform 0.3s ease;
+  }
+  
+  /* --- THE KEY CHANGE IS HERE --- */
+  
+  /* On hover: change text color, but DO NOT add an underline */
+  .social-link:hover {
+    text-decoration: none; /* This is the line that prevents the underline */
+    color: #4dabf7; /* Highlight the text with the theme's accent color */
+  }
+  
+  /* Also add a nice hover effect to the icon */
+  .social-link:hover img {
+    transform: scale(1.1);
+    filter: invert(0.9); /* Make icon brighter on hover */
+  }
