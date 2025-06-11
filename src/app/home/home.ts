@@ -52,7 +52,7 @@ export class HomeComponent {
       url: 'https://mickakr.itch.io/circuity'
     },
     {
-      title: 'Trickshot (Beta)',
+      title: 'Trickshot (Alpha)',
       description: 'A mobile arcade game where the objective is to get a ball into a cup, navigating through various obstacles.',
       url: 'https://play.google.com/store/apps/details?id=com.Micka.Trickshot'
     },
