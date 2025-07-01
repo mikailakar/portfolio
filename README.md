@@ -20,7 +20,7 @@ Welcome to the repository for my personal portfolio website. This project is a s
 
 This portfolio itself was built using the following technologies:
 
--   **Framework:** [Angular](https://angular.io/) (v17+)
+-   **Framework:** [Angular](https://angular.io/) (v20)
 -   **Language:** [TypeScript](https://www.typescriptlang.org/)
 -   **Styling:** CSS3 with a component-based approach
 -   **Deployment:** Hosted on [Vercel](https://vercel.com/) with Continuous Deployment via GitHub Actions.
