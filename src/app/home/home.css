@@ -1,8 +1,15 @@
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .section {
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   border-bottom: 1px solid #333;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .section h2 {
@@ -13,39 +20,15 @@
 
 /* --- About Me Section Styles --- */
 
-/* Make the whole section a flex container to center everything */
 #about.section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; /* Center-align the text */
+  text-align: center;
 }
 
-/* Container for the social icons */
-.about-socials {
-  display: flex;
-  gap: 1.5rem; /* Space between the icons */
-  margin-top: 1rem; /* Space below the "About Me" title */
-  margin-bottom: 1.5rem; /* Space above the paragraph */
-}
-
-/* The icon images within the links */
-.about-socials .social-link img {
-  height: 32px; /* A good size for this context */
-  width: auto;
-  filter: invert(0.8); /* Light grey to match the theme */
-  transition: all 0.3s ease-in-out;
-}
-
-/* Hover effect for the icons */
-.about-socials .social-link:hover img {
-  filter: invert(1); /* Make it pure white on hover */
-  transform: scale(1.15); /* Make it pop */
-}
-
-/* Style the paragraph for better readability */
 #about p {
-  max-width: 600px; /* Constrain the width of the text */
+  max-width: 600px;
   line-height: 1.6;
   color: #e0e0e0;
 }
@@ -57,17 +40,20 @@
   justify-content: center;
   gap: 2rem 2.5rem;
 }
+
 .skill-item {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .skill-logo {
   height: 60px;
   transition: transform 0.3s ease;
   filter: invert(0.9);
 }
+
 .skill-name {
   position: absolute;
   bottom: -30px;
@@ -81,10 +67,12 @@
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 10;
 }
+
 .skill-item:hover .skill-name {
   opacity: 1;
   visibility: visible;
 }
+
 .skill-item:hover .skill-logo {
   transform: scale(1.15);
 }
@@ -93,31 +81,30 @@
 /* --- Project Styles --- */
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2.5rem 1.5rem;
+  justify-content: center;
 }
 
-/* This targets the <a> tag wrapping the card */
 .project-card-link {
+  flex: 0 1 300px;
   text-decoration: none;
   color: inherit;
-  display: flex; 
+  display: flex;
 }
 
 .project-card {
   background-color: #1e1e1e;
-  padding: 1.5rem;
   border: 1px solid #333;
   border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added 'ease' for smoothness */
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.project-card-link:hover .project-card { /* Use the link's hover state */
+.project-card-link:hover .project-card {
   transform: translateY(-5px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
@@ -133,13 +120,12 @@
 .project-title-icon {
   height: 20px;
   width: 20px;
-  filter: invert(0.6); /* This is the initial, dimmer state */
-  transition: filter 0.3s ease; /* STEP 1: Add the smooth transition */
+  filter: invert(0.6);
+  transition: filter 0.3s ease;
 }
 
-/* STEP 2: The new hover rule */
 .project-card-link:hover .project-title-icon {
-  filter: invert(0.9); /* This is the bright state on hover */
+  filter: invert(0.9);
 }
 
 .project-card p {
@@ -147,4 +133,40 @@
   font-size: 0.95rem;
   line-height: 1.5;
   flex-grow: 1;
+  margin: 0;
+}
+
+
+.project-image-container {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-content {
+  padding: 1.5rem;
+  padding-top: 1rem;
+}
+
+.no-image-padding {
+  padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
 }
