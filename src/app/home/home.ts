@@ -29,10 +29,20 @@ export class HomeComponent {
     { name: 'C#', imageUrl: 'assets/images/skills/csharp.svg' },
     { name: 'MSSQL', imageUrl: 'assets/images/skills/mssql.svg' },
     { name: 'Python', imageUrl: 'assets/images/skills/python.svg' },
+    { name: 'Docker', imageUrl: 'assets/images/skills/docker.svg' },
+    { name: 'Kubernetes', imageUrl: 'assets/images/skills/kubernetes.svg' },
+    { name: 'Redis', imageUrl: 'assets/images/skills/redis.svg' },
+    { name: 'MongoDB', imageUrl: 'assets/images/skills/mongodb.svg' },
+    { name: 'Node.js', imageUrl: 'assets/images/skills/nodejs.svg' },
+    { name: 'TypeScript', imageUrl: 'assets/images/skills/typescript.svg' },
     { name: 'HTML5', imageUrl: 'assets/images/skills/html5.svg' },
     { name: 'CSS3', imageUrl: 'assets/images/skills/css3.svg' },
-    { name: 'Blender', imageUrl: 'assets/images/skills/blender.svg' },
+    { name: 'Bootstrap', imageUrl: 'assets/images/skills/bootstrap.svg' },
+    { name: 'Git', imageUrl: 'assets/images/skills/git.svg' },
+    { name: 'Postman', imageUrl: 'assets/images/skills/postman.svg' },
+    { name: 'Matlab', imageUrl: 'assets/images/skills/matlab.svg' },
     { name: 'Photoshop', imageUrl: 'assets/images/skills/photoshop.svg' },
+    { name: 'Blender', imageUrl: 'assets/images/skills/blender.svg' },
   ];
 
   projects: Project[] = [

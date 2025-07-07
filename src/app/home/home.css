@@ -39,6 +39,20 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1005px) {
+  .skills-grid {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 706px) {
+  .skills-grid {
+    max-width: 500px;
+  }
 }
 
 .skill-item {
