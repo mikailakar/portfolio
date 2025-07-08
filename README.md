@@ -1,6 +1,6 @@
 # Personal Portfolio Website 🚀
 
-Welcome to the repository for my personal portfolio website. This project is a single-page application built with **Angular** to showcase my skills0,0 and the projects I've worked on.
+Welcome to the repository for my personal portfolio website. This project is a single-page application built with **Angular** to showcase my skills and the projects I've worked on.
 
 **✨ Live Demo:** **[mikailakar.dev](https://mikailakar.dev)**
 
