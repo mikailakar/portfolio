@@ -65,7 +65,7 @@ export class HomeComponent {
       imageUrl: 'assets/images/projects/circuity.png'
     },
     {
-      title: 'Trickshot (Alpha)',
+      title: 'Trickshot',
       description: 'A mobile arcade game where the objective is to get a ball into a cup, navigating through various obstacles.',
       url: 'https://play.google.com/store/apps/details?id=com.Micka.Trickshot',
       imageUrl: 'assets/images/projects/trickshot.png'
