@@ -59,12 +59,6 @@ export class HomeComponent {
       imageUrl: 'assets/images/projects/angular_dictionary.png'
     },
     {
-      title: 'Bitume Instinct',
-      description: 'A mobile racing game developed in Unity.',
-      url: 'https://play.google.com/store/apps/details?id=com.micka.bitumeinstinct',
-      imageUrl: 'assets/images/projects/bitume_instinct.png'
-    },
-    {
       title: 'Circuity',
       description: 'A PC game developed in Unity that allows players to build electronic circuits in a 3D environment.',
       url: 'https://mickakr.itch.io/circuity',
@@ -75,6 +69,12 @@ export class HomeComponent {
       description: 'A mobile arcade game where the objective is to get a ball into a cup, navigating through various obstacles.',
       url: 'https://play.google.com/store/apps/details?id=com.Micka.Trickshot',
       imageUrl: 'assets/images/projects/trickshot.png'
+    },
+    {
+      title: 'Bitume Instinct',
+      description: 'A mobile racing game developed in Unity.',
+      url: 'https://play.google.com/store/apps/details?id=com.micka.bitumeinstinct',
+      imageUrl: 'assets/images/projects/bitume_instinct.png'
     },
     {
       title: 'Angular API Frontend',
