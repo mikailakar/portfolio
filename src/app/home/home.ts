@@ -47,6 +47,18 @@ export class HomeComponent {
 
   projects: Project[] = [
     {
+      title: 'UrBmk',
+      description: 'A full-stack PC hardware benchmarking platform built with Angular and ASP.NET Core. Users can share their PC setups, submit game benchmarks, and compare real-world performance metrics.',
+      url: 'https://urbmk-1.onrender.com',
+      imageUrl: ''
+    },
+    {
+      title: 'SimpleIPTV',
+      description: 'SimpleIPTV is a modern, lightweight, and feature-rich IPTV player for Android, built entirely with Kotlin and Jetpack Compose. It is designed to provide a premium, ad-free viewing experience with advanced playback controls and playlist management.',
+      url: 'https://github.com/mikailakar/SimpleIPTV',
+      imageUrl: ''
+    },
+    {
       title: '.NET 8 Web API',
       description: 'Back-End API built with ASP.NET Core for managing users and roles, featuring user authentication, role-based access control, JWT token generation, and CRUD operations for user data. The project is structured with interfaces and their respective implementations, making it easy to extend and maintain.',
       url: 'https://github.com/mikailakar/Backend-Project',
@@ -105,6 +117,6 @@ export class HomeComponent {
       description: 'This project demonstrates the implementation of the Two-Phase Commit (2PC) protocol in .NET 8. The Two-Phase Commit protocol is a distributed algorithm used to ensure that all participants in a distributed transaction either commit or roll back their changes, maintaining the atomicity of the transaction.',
       url: 'https://github.com/mikailakar/TwoPhaseCommit',
       imageUrl: ''
-    },
+    }
   ];
 }
