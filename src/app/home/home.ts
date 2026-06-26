@@ -50,13 +50,13 @@ export class HomeComponent {
       title: 'UrBmk',
       description: 'A full-stack PC hardware benchmarking platform built with Angular and ASP.NET Core. Users can share their PC setups, submit game benchmarks, and compare real-world performance metrics.',
       url: 'https://urbmk-1.onrender.com',
-      imageUrl: ''
+      imageUrl: 'assets/images/projects/urbmk.png'
     },
     {
       title: 'SimpleIPTV',
       description: 'SimpleIPTV is a modern, lightweight, and feature-rich IPTV player for Android, built entirely with Kotlin and Jetpack Compose. It is designed to provide a premium, ad-free viewing experience with advanced playback controls and playlist management.',
       url: 'https://github.com/mikailakar/SimpleIPTV',
-      imageUrl: ''
+      imageUrl: 'assets/images/projects/simpleiptv.png'
     },
     {
       title: '.NET 8 Web API',
