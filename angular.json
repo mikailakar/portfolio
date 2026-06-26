@@ -17,7 +17,11 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "public/favicon.png",
+              {
+                "glob": "favicon.png",
+                "input": "public",
+                "output": "/"
+              },
               "src/assets"
             ],
             "styles": [
@@ -68,7 +72,11 @@
           "options": {
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "public/favicon.png",
+              {
+                "glob": "favicon.png",
+                "input": "public",
+                "output": "/"
+              },
               "src/assets"
             ],
             "styles": [
