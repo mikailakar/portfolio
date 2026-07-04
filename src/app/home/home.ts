@@ -49,7 +49,7 @@ export class HomeComponent {
     {
       title: 'UrBmk',
       description: 'A full-stack PC hardware benchmarking platform built with Angular and ASP.NET Core. Users can share their PC setups, submit game benchmarks, and compare real-world performance metrics.',
-      url: 'https://urbmk-1.onrender.com',
+      url: 'https://urbmk.mikailakar.dev',
       imageUrl: 'assets/images/projects/urbmk.png'
     },
     {
