@@ -47,6 +47,12 @@ export class HomeComponent {
 
   projects: Project[] = [
     {
+      title: 'Elan',
+      description: 'Elan is a modern offline workout tracker. Features a comprehensive library of 450+ exercises, custom routines, superset logging, and detailed progress analytics.',
+      url: 'https://play.google.com/store/apps/details?id=com.micka.elan',
+      imageUrl: 'assets/images/projects/elan.png'
+    },
+    {
       title: 'UrBmk',
       description: 'A full-stack PC hardware benchmarking platform built with Angular and ASP.NET Core. Users can share their PC setups, submit game benchmarks, and compare real-world performance metrics.',
       url: 'https://urbmk.mikailakar.dev',

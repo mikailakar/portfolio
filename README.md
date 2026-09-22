@@ -31,6 +31,6 @@ This portfolio itself was built using the following technologies:
 
 I'm always open to connecting and discussing new opportunities.
 
--   **Email:** `mikailakr42@gmail.com`
+-   **Email:** `contact@mikailakar.dev`
 -   **GitHub:** [github.com/mikailakar](https://github.com/mikailakar)
 -   **LinkedIn:** [linkedin.com/in/mikailakar](https://www.linkedin.com/in/mikailakar/)
