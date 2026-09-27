@@ -18,7 +18,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
-                "glob": "favicon.png",
+                "glob": "**/*",
                 "input": "public",
                 "output": "/"
               },
@@ -73,7 +73,7 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
-                "glob": "favicon.png",
+                "glob": "**/*",
                 "input": "public",
                 "output": "/"
               },
